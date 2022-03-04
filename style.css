@@ -4,6 +4,10 @@
 }
 
 body {
+    background-image: url('./snow.jpg');
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
 }

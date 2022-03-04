@@ -1,3 +1,8 @@
+const daysEl = document.getElementById("days");
+const hoursEl = document.getElementById("hours");
+const minsEl = document.getElementById("minutes");
+const secondsEl = document.getElementById("seconds");
+
 const newYear = "1 Jan 2023";
 
 function countdown {
@@ -11,4 +16,14 @@ function countdown {
     const mins = Math.floor(totalseconds / 60) % 60;
     const seconds = Math.floor(totalSeconds)% 60;
     
+
+    daysEl.innerHTML = days;
+    hoursEl.innerHTML = hours;
+    minsEl.innerHTML = mins;
+    secondsEl.innerHTML = seconds;
 }
+
+// initial call
+countdown();
+
+setInterval(countdown, 1000);
